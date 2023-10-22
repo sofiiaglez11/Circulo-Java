@@ -1,5 +1,3 @@
-
-
 package circulos;
 
 //quitando public, Circulo tiene solo visibilidad de paquete
