@@ -88,7 +88,7 @@ public class Circulo {  //cada círculo tiene asociado un cuadrado ciruclo x->cu
                            " y centro: " + this.x + ", " + this.y);
    }
    
-   public Punto Norte ()
+   public Punto norte ()
    {
        return new Punto (this.x, this.y+this.radio);
    }

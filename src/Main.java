@@ -45,7 +45,7 @@ public class Main {
          c2.pintar();
      
          //prueba de dependencia
-         circulos.Punto n2 = c2.Norte();
+         circulos.Punto n2 = c2.norte();
          c2.setEnvolvente();
          c2.getEnvolvente();
          
