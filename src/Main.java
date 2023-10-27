@@ -67,6 +67,15 @@ public class Main {
          yo.mejorarPuja(muchos_circulos, 150);
          muchos_circulos.ganadorSubasta();
          
+         
+         // prueba de la clase de
+         
+         muchos_circulos.addCirculo(5,0,0);
+         muchos_circulos.addCirculo(3,4,4);
+         muchos_circulos.addCirculo(2,-3,-3);
+         
+         muchos_circulos.calcularNorte();
+         
     }
     
 }

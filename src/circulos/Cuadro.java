@@ -48,7 +48,7 @@ public class Cuadro {
            return pujas.get(mayor_puja).getComprador();
        }
        
-       public Punto CalcularNorte () {
+       public Punto calcularNorte () {
            
         Punto norte = new Punto (0,Float.NEGATIVE_INFINITY); //1
 
