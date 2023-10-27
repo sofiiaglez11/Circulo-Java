@@ -47,5 +47,25 @@ public class Cuadro {
            
            return pujas.get(mayor_puja).getComprador();
        }
+       
+       public Punto CalcularNorte () {
+           
+        Punto norte = new Punto (0,Float.NEGATIVE_INFINITY); //1
+
+        for (Circulo circulo: this.circulos) {
+            Punto nor_circulo = circulo.Norte();
+            float yCir=nor_circulo.getX();
+            float xCir=nor_circulo.getY();
+
+            float yNorte=norte.getY();
+
+            if (yNorte<yCir) {
+              norte.setX(xCir);
+              norte.setY(yCir);
+            }
+        }
+        return norte;
+       }
+      
     
-}
+      }

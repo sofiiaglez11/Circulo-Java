@@ -64,7 +64,7 @@ public class Main {
          comp1.pujar(muchos_circulos, 200);
          muchos_circulos.ganadorSubasta();
          
-         yo.mejorarPuja(muchos_circulos, 250);
+         yo.mejorarPuja(muchos_circulos, 150);
          muchos_circulos.ganadorSubasta();
          
     }

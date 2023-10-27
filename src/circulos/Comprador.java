@@ -46,7 +46,7 @@ public class Comprador {
         }
         
         if (max>0)  //1.4
-            this.pujar(cuadro, cantidad);
+            this.pujar(cuadro, cantidad+max);
             
     }
 }
