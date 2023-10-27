@@ -26,6 +26,11 @@ public class Puja {
     {
         return this.comprador;
     }
+
+    public Cuadro getCuadro() {
+        return cuadro;
+    }
+    
     
     
     

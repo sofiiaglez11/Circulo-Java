@@ -32,6 +32,21 @@ public class Comprador {
         cua.addPuja(puja);
     }
     
-    
+    public void mejorarPuja (Cuadro cuadro, int cantidad) {
             
+        int max=0;
+        
+        
+        for (Puja puja: this.pujas) {   //1.1 y loop
+            Cuadro cuadroPuja = puja.getCuadro();   //1.2
+            int precioPuja = puja.getPrecio();      //1.3
+            
+            if (cuadro==cuadroPuja && precioPuja > max) 
+                   max=precioPuja;
+        }
+        
+        if (max>0)  //1.4
+            this.pujar(cuadro, cantidad);
+            
+    }
 }

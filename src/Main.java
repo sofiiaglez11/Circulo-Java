@@ -60,10 +60,12 @@ public class Main {
          // prueba de la clase de asociaion
          Comprador yo = new Comprador ("yo");
          yo.pujar(muchos_circulos, 100);
-         Comprador comp1 = new Comprador ("Antonio");
+         Comprador comp1 = new Comprador ("comp1");
          comp1.pujar(muchos_circulos, 200);
-         yo.pujar(muchos_circulos, 150);
-         //System.out.println("El ganador de la subasta es: " + muchos_circulos.ganadorSubasta().getNombre());
+         muchos_circulos.ganadorSubasta();
+         
+         yo.mejorarPuja(muchos_circulos, 250);
+         muchos_circulos.ganadorSubasta();
          
     }
     
