@@ -3,6 +3,9 @@ import circulos.Circulo; // se incluye solo la clase que neesito
 import circulos.Cuadrado;
 import circulos.Cuadro;
 import circulos.Comprador;
+import circulos.Circulo;
+import circulos.Rueda;
+
 
 public class Main {
 
@@ -11,11 +14,11 @@ public class Main {
      */
         public static void main(String[] args) {
                
-        Circulo c = new Circulo();
-        
+      /* circulos.Circulo c = new circulos.Circulo();
+       
         
         System.out.println( "Hay " + Circulo.cuantosCirculosHay() + " círculos");
-        //System.out.println( "Hay " + circulos.Circulo.cuantosCirculosHay() + " círculos");  -> si no se hace el import
+        //System.out.println( "Hay " + circulos.Circulo.cuantosCirculosHay() + " círculos"); // -> si no se hace el import
         
         Circulo c1 = new Circulo(1,2,-3); //new devuelve un puntero
                                    //en Java todo son punteros
@@ -74,8 +77,14 @@ public class Main {
          muchos_circulos.addCirculo(3,4,4);
          muchos_circulos.addCirculo(2,-3,-3);
          
-         muchos_circulos.calcularNorte();
-         
+         muchos_circulos.calcularNorte();*/
+      
+      
+      // Prueba de herencia
+      Rueda rueda = new Rueda (5.0f,-1.0f,1.0f,3.0f);
+      
+      Float area = rueda.area(); 
+      
     }
     
 }

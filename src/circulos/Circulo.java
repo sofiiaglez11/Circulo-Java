@@ -9,9 +9,9 @@ public class Circulo {  //cada círculo tiene asociado un cuadrado ciruclo x->cu
    static private int numCirculos = 0;
    static private final float RADIO_DEFECTO = 1.0f;
    
-   private float radio;
-   private float x;
-   private float y;
+   protected float radio; // visibilidad protegida para la herencia (permite visibilidad de paquete)
+   protected float x;
+   protected float y;
   
    private Cuadrado envolvente;
    
@@ -52,7 +52,7 @@ public class Circulo {  //cada círculo tiene asociado un cuadrado ciruclo x->cu
            this.radio=1;
        else
            this.radio=radio;*/
-        this.setRadio(radio);
+       this.setRadio(radio);
        this.x = x;
        this.y = y;
        this.envolvente = null;
@@ -113,5 +113,13 @@ public class Circulo {  //cada círculo tiene asociado un cuadrado ciruclo x->cu
    {
        return this.envolvente;
    }
+   
+   
+   public float area () {
+       
+       return (float)Math.PI * this.radio * this.radio;      
+       
+   }
+   
  
 }
