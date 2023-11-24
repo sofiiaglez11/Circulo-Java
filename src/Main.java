@@ -81,9 +81,23 @@ public class Main {
       
       
       // Prueba de herencia
-      Rueda rueda = new Rueda (5.0f,-1.0f,1.0f,3.0f);
+      //Rueda rueda = new Rueda (5.0f,-1.0f,1.0f,3.0f);
       
-      Float area = rueda.area(); 
+     // Float area = rueda.area(); 
+      
+      
+      // asignaciones polimórficas
+      Circulo circulo2 = new Circulo ();
+      Rueda rueda2 = new Rueda (5, 0,0,3);
+      
+      //Rueda rueda3 = circulo2; un círculo no es una rueda
+      
+      Circulo circulo3 = rueda2;
+      
+      
+      
+      
+              
       
     }
     
