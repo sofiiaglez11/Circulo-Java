@@ -86,18 +86,29 @@ public class Main {
      // Float area = rueda.area(); 
       
       
-      // asignaciones polimórficas
+      // asignaciones polimórficas -> típicas preguntas de examen
       Circulo circulo2 = new Circulo ();
       Rueda rueda2 = new Rueda (5, 0,0,3);
       
       //Rueda rueda3 = circulo2; un círculo no es una rueda
+      Circulo circulo3 = rueda2; // tipo estático de circulo3 -> Circulo
+                                 // tipo dinámico de circulo3 -> Rueda
+           
+      circulo3.area();      // Se ejecuta el area del tipo dinámico (área)
+      circulo3=circulo2;    // ha cambiado su tipo dinámico
+      circulo3.area();      // se ejecuta el área de Círculo
       
-      Circulo circulo3 = rueda2;
+      
+      circulo3=rueda2;
+      //circulo3.inflar(3);     // no compila porque una variable solo puede 
+                                //acceder a los métodos de su tipo estático
+      ((Rueda)circulo3).inflar(3);
       
       
-      
-      
-              
+     // ((Rueda) ( new Circulo(5,0,0))).inflar(2);  // no se puede ocnvertir un círculo en una
+                                                    // rueda, aunque no de error de compilación
+        
+        //                                         
       
     }
     

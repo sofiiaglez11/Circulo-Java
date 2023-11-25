@@ -35,4 +35,8 @@ public class Rueda extends Circulo { // una rueda hereda de círculo
         
         return radioExterior-radioInterior;*/
     }
+    
+    public void inflar (float aire) {
+        this.radio+=aire;
+    }
 }
