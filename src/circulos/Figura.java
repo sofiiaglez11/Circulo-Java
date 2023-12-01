@@ -8,6 +8,10 @@ package circulos;
  *
  * @author sofiaglez
  */
+
+/*
+
+CLase abstracta
 public abstract class Figura {
     private int color;
     
@@ -16,4 +20,12 @@ public abstract class Figura {
     }
     
     public abstract float perimetro ();
+}
+
+*/
+
+
+public interface Figura {
+    // no tiene atributos
+    float perimetro(); // en una interfaz todos los métodos son públicos
 }

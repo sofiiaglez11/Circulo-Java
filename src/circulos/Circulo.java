@@ -4,8 +4,8 @@ package circulos;
 // solo la puede usar clases del mismo paquete
 // no se puede importar al main
 
-public class Circulo extends Figura{  //cada círculo tiene asociado un cuadrado ciruclo x->cuadrado, asociación: envolvente
-    
+//public class Circulo extends Figura{  //cada círculo tiene asociado un cuadrado ciruclo x->cuadrado, asociación: envolvente
+public class Circulo implements Figura {  
    static private int numCirculos = 0;
    static private final float RADIO_DEFECTO = 1.0f;
    
@@ -52,7 +52,7 @@ public class Circulo extends Figura{  //cada círculo tiene asociado un cuadrado
            this.radio=1;
        else
            this.radio=radio;*/
-       super();
+       //super(); // no se pone en la interfaz
        this.setRadio(radio);
        this.x = x;
        this.y = y;

@@ -7,7 +7,6 @@ import circulos.Circulo;
 import circulos.Rueda;
 import circulos.Figura;
 
-
 public class Main {
 
     /**
@@ -110,7 +109,8 @@ public class Main {
                                                     // rueda, aunque no de error de compilación
         
         // Clase abstracta
-       // Figura fig = new Figura (); // no se puede instanciar una clase abstracta       
+       // Figura fig = new Figura (); // no se puede instanciar una clase abstracta   
+       // una interfaz se usa igual que un aclase abstracta
         Figura fig2;
         
         Circulo c1 = new Circulo();
@@ -119,11 +119,7 @@ public class Main {
         fig2 = c1;
         fig2.perimetro();
         fig2 = envolvente;
-        fig2.perimetro();
-        
-        
-        
-      
+        fig2.perimetro();    
     }
     
 }

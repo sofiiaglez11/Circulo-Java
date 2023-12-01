@@ -4,8 +4,8 @@ package circulos;
  *
  * @author sofiaglez
  */
-public class Cuadrado extends Figura{
-    
+//public class Cuadrado extends Figura{
+public class Cuadrado implements Figura {  
         
     static private float LADO_DEFECTO = 1.0f;
     
@@ -15,7 +15,7 @@ public class Cuadrado extends Figura{
     
     public Cuadrado (float lado, float x, float y)
     {
-        super(); 
+        //super(); // no se pone en la interfaz 
         if (lado >0 )
              this.lado = lado;
         else
