@@ -5,6 +5,7 @@ import circulos.Cuadro;
 import circulos.Comprador;
 import circulos.Circulo;
 import circulos.Rueda;
+import circulos.Figura;
 
 
 public class Main {
@@ -105,10 +106,23 @@ public class Main {
       ((Rueda)circulo3).inflar(3);
       
       
-     // ((Rueda) ( new Circulo(5,0,0))).inflar(2);  // no se puede ocnvertir un círculo en una
+     // ((Rueda) ( new Circulo(5,0,0))).inflar(2);  // no se puede convertir un círculo en una
                                                     // rueda, aunque no de error de compilación
         
-        //                                         
+        // Clase abstracta
+       // Figura fig = new Figura (); // no se puede instanciar una clase abstracta       
+        Figura fig2;
+        
+        Circulo c1 = new Circulo();
+        Cuadrado envolvente = c1.getEnvolvente();
+        
+        fig2 = c1;
+        fig2.perimetro();
+        fig2 = envolvente;
+        fig2.perimetro();
+        
+        
+        
       
     }
     

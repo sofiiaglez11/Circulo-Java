@@ -4,7 +4,7 @@ package circulos;
  *
  * @author sofiaglez
  */
-public class Cuadrado {
+public class Cuadrado extends Figura{
     
         
     static private float LADO_DEFECTO = 1.0f;
@@ -15,6 +15,7 @@ public class Cuadrado {
     
     public Cuadrado (float lado, float x, float y)
     {
+        super(); 
         if (lado >0 )
              this.lado = lado;
         else
@@ -38,6 +39,10 @@ public class Cuadrado {
     {
         return this.y;
     }
-            
     
+    @Override
+    public float perimetro () {
+        return this.lado*4;
+    }
+            
 }
