@@ -21,6 +21,7 @@ public class Circulo implements Figura {
    @return devuelve el número de círculos
    */
    static public int cuantosCirculosHay() { //Metodo de clase
+       System.out.println("Hay " + Circulo.numCirculos + " circulos");
        return Circulo.numCirculos;
    }
    
@@ -36,6 +37,7 @@ public class Circulo implements Figura {
    @brief constructor sin parámetros
    */
    public Circulo () {
+       
        this(Circulo.RADIO_DEFECTO,0,0);
    }
    

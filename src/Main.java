@@ -118,8 +118,14 @@ public class Main {
         
         fig2 = c1;
         fig2.perimetro();
-        fig2 = envolvente;
-        fig2.perimetro();    
+        fig2 = new Cuadrado (1,1,1);
+//        fig2.perimetro();    
+        
+
+        // prueba de herencia de clases
+        Circulo.cuantosCirculosHay();
+        Rueda.cuantosCirculosHay();
+        
     }
     
 }

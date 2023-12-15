@@ -39,4 +39,20 @@ public class Rueda extends Circulo { // una rueda hereda de círculo
     public void inflar (float aire) {
         this.radio+=aire;
     }
+    
+    // Redefinir cuantosCirculosHay
+    
+   // @Override -> a los métodos estáticos no se le pone override
+    static public int cuantosCirculosHay() { //Metodo de clase
+      /* System.out.println("Hay " + Circulo.getNumCirculos() + " circulos" + 
+                          " contando las ruedas");
+      
+       return Circulo.getNumCirculos(); */
+      
+      // no deja hacer super.cuantosCirculosHay(); -> no hay redefinición de métodos de clase
+      Circulo.cuantosCirculosHay();
+      System.out.println("Contando las ruedas");
+      return Circulo.getNumCirculos();
+   }
+        
 }
