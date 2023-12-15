@@ -4,7 +4,11 @@ package circulos;
  *
  * @author sofiaglez
  */
-public class Punto <T> {
+
+// Comparable es un interfaz que ya existe en Java
+
+public class Punto <T extends Comparable> { 
+//public class Punto <T> {
    
     private T x;
     private T y;

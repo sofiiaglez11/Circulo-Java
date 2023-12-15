@@ -5,7 +5,7 @@ package circulos;
 // no se puede importar al main
 
 //public class Circulo extends Figura{  //cada círculo tiene asociado un cuadrado ciruclo x->cuadrado, asociación: envolvente
-public class Circulo implements Figura {  
+public class Circulo implements Figura, Comparable<Circulo> {  
    static private int numCirculos = 0;
    static private final float RADIO_DEFECTO = 1.0f;
    
@@ -128,5 +128,17 @@ public class Circulo implements Figura {
    public float perimetro () {
        return 2*(float)Math.PI*this.radio;
    } 
+   
+   
+   // Para que los circulos sean comparables
+
+    @Override
+    public int compareTo(Circulo o) {
+        if (this.radio==o.radio) {
+            return 0;
+        } else
+            return 1;
+    }
+   
 
 }

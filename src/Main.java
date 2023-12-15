@@ -143,7 +143,9 @@ public class Main {
         // prueba de clases parametrizables
         //Punto puntoBooleano = new Punto (true, 5.0f);
         //Punto <Boolean>puntoBooleano = new Punto (true, 5.0f);
-        //Punto <Boolean>puntoBooleano = new Punto <Boolean> (true, 5.0f); 
+        //Punto <Boolean>puntoBooleano = new Punto <Boolean> (true, 5.0f);
+        // con extends comparable da error (Circulo no es comparable)
+        // se soluciona implementando el método comparable
         Punto puntoBooleano = new Punto (new Circulo(), new Circulo()); 
         
     }
