@@ -4,29 +4,29 @@ package circulos;
  *
  * @author sofiaglez
  */
-public class Punto {
+public class Punto <T> {
    
-    private float x;
-    private float y;
+    private T x;
+    private T y;
 
-    public Punto(float x, float y) {
+    public Punto(T x, T y) {
         this.x = x;
         this.y = y;
     }
 
-    public float getX() {
+    public T getX() {
         return x;
     }
 
-    public float getY() {
+    public T getY() {
         return y;
     }
 
-    public void setX(float x) {
+    public void setX(T x) {
         this.x = x;
     }
 
-    public void setY(float y) {
+    public void setY(T y) {
         this.y = y;
     }
     

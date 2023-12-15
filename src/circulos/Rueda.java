@@ -8,7 +8,7 @@ package circulos;
  *
  * @author sofiaglez
  */
-public class Rueda extends Circulo { // una rueda hereda de círculo
+public class Rueda extends Circulo implements Inflable { // una rueda hereda de círculo
     
     private Float llanta;
     

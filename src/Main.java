@@ -6,6 +6,7 @@ import circulos.Comprador;
 import circulos.Circulo;
 import circulos.Rueda;
 import circulos.Figura;
+import circulos.Punto;
 
 public class Main {
 
@@ -136,6 +137,13 @@ public class Main {
         // entra el método del Circulo, no en el de la Rueda
         cc.cuantosCirculosHay();
         
+        ((Rueda)cc).inflar(3);
+        
+        
+        // prueba de clases parametrizables
+        //Punto puntoBooleano = new Punto (true, 5.0f);
+        //Punto <Boolean>puntoBooleano = new Punto (true, 5.0f);
+        Punto <Boolean>puntoBooleano = new Punto <Boolean> (true, 5.0f);
     }
     
 }

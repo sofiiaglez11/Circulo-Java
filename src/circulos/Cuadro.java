@@ -50,10 +50,10 @@ public class Cuadro {
        
        public Punto calcularNorte () {
            
-        Punto norte = new Punto (0,Float.NEGATIVE_INFINITY); //1
+        Punto<Float> norte = new Punto (0,Float.NEGATIVE_INFINITY); //1
 
         for (Circulo circulo: this.circulos) {
-            Punto nor_circulo = circulo.norte();
+            Punto <Float>nor_circulo = circulo.norte();
             float yCir=nor_circulo.getX();
             float xCir=nor_circulo.getY();
 
