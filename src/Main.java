@@ -126,6 +126,16 @@ public class Main {
         Circulo.cuantosCirculosHay();
         Rueda.cuantosCirculosHay();
         
+        // prueba de ligadura dinámica y metodos de clase
+        Circulo cc = new Rueda (5,1,1,3);
+        
+        // Java lo permite, pero no es correcto
+        // Se está accediendo a un método de clase desde una instancia
+        // no funciona la ligadura dinámica para la herencia de clases 
+        // el método es static, no funciona nada dinámico
+        // entra el método del Circulo, no en el de la Rueda
+        cc.cuantosCirculosHay();
+        
     }
     
 }
