@@ -15,6 +15,8 @@ public class Circulo implements Figura, Comparable<Circulo> {
   
    private Cuadrado envolvente;
    
+   
+   
    /*
    @brief cuenta el núemro de círculos
    @param 
@@ -60,6 +62,21 @@ public class Circulo implements Figura, Comparable<Circulo> {
        this.y = y;
        this.envolvente = null;
        Circulo.numCirculos++;
+   }
+   
+   
+   public Circulo (Circulo otro) {
+       this(otro.radio, otro.x, otro.y);
+       
+      /* es una copia de superficial del cuadrado, los dos círculos tienen 
+         el mismo objeto como envolvente
+         this.envolvente=otro.envolvente;  
+        */
+      
+      // para que sea copia profunda
+      this.envolvente = new Cuadrado(otro.getEnvolvente().getLado(),
+              otro.getEnvolvente().getX(),otro.getEnvolvente().getY());
+       
    }
    
     public static int getNumCirculos() {

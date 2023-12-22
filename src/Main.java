@@ -78,7 +78,7 @@ public class Main {
          muchos_circulos.addCirculo(3,4,4);
          muchos_circulos.addCirculo(2,-3,-3);
          
-         muchos_circulos.calcularNorte();*/
+         muchos_circulos.calcularNorte();
       
       
       // Prueba de herencia
@@ -147,6 +147,22 @@ public class Main {
         // con extends comparable da error (Circulo no es comparable)
         // se soluciona implementando el método comparable
         Punto puntoBooleano = new Punto (new Circulo(), new Circulo()); 
+        */
+        // Prueba de copia
+        // 
+        Circulo uno = new Circulo (5,0,0);
+        Circulo dos = uno;
+        // cuando modificamos el radio de 'dos' se cambia también el de 'uno'
+        dos.setRadio(7);
+        
+        
+        // copia profunda (una vez se ha hecho copia profunda también del cuadrado)
+        // copia defensiva -> evitar que al modificar un objeto d¡se modifique 
+        // también otro
+        Cuadrado env = new Cuadrado (14, 0,0);
+        uno.setEnvolvente(env);
+        Circulo copia = new Circulo(uno);   
+        copia.setRadio(8);
         
     }
     
